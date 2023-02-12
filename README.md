@@ -13,12 +13,12 @@ The Library Management System includes the ability to:
 - Manage the collection of items
 - Manage the members of the library
 
-### Important Notes about Assignment
+## Important Notes about Assignment
 
 1. If any item/member is selected from the table before clicking the "Edit" button, the program will open the "Add Item" form instead in both the Item and Member tabs of the application. Remember to always select an entry before attempting to edit it.
 
 
-### Login Information
+## Login Information
 
 - **User 1:** 
 
