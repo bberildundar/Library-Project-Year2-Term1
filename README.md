@@ -1,15 +1,22 @@
-# Java Fundamentals End Assignment
-## Betül Beril Dündar (691136) from IT2B
+# Library Management System
+## Java Fundamentals End Assignment
 
---- 
+This application is designed to manage a library's collection of items and members. Users of the application will be able to lend and receive items, as well as manage the collection and members.
 
-- Searching items and members functionalities are added for extra points.
-- In exam, assignment 1 and 2 are done completely. assignment 3 haven't done.
+## Purpose
+The purpose of this project was to practice and reinforce the knowledge of Java fundamentals learned in the course.
+
+## Features
+The Library Management System includes the ability to:
+
+- Lend and receive items
+- Manage the collection of items
+- Manage the members of the library
 
 ### Important Notes about Assignment:
 1. If any item/member is selected from the table before clicking the "Edit" button, the program will open the "Add Item" form instead in both the Item and Member tabs of the application. Remember to always select an entry before attempting to edit it.
-2. When I tried to move all the model classes to a Model file and all the Controllers classes to a Controller file, error occurred that's why I left all of them like that. It is confusing, I checked the packages etc. yet I couldn't find the solution to fix the error.
----
+
+
 ### Login Information:
 - **User 1:** 
 
