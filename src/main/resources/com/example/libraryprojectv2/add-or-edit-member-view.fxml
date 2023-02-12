@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="309.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="lblAddOrEditMemberHeader" layoutX="27.0" layoutY="21.0" prefHeight="58.0" prefWidth="221.0" text="Add Member">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="79.0" text="First Name:" />
+      <Label layoutX="28.0" layoutY="132.0" text="Last Name:" />
+      <TextField fx:id="txtFirstName" layoutX="27.0" layoutY="101.0" prefHeight="25.0" prefWidth="236.0" promptText="First Name" />
+      <TextField fx:id="txtLastName" layoutX="27.0" layoutY="155.0" prefHeight="25.0" prefWidth="236.0" promptText="Last Name" />
+      <Label layoutX="300.0" layoutY="79.0" text="Birth Date:" />
+      <DatePicker fx:id="datePicker" layoutX="300.0" layoutY="101.0" prefHeight="25.0" prefWidth="236.0" promptText="dd-mm-yyyy" />
+      <Button fx:id="btnConfirmAddOrEditMember" layoutX="164.0" layoutY="262.0" mnemonicParsing="false" onAction="#onClickConfirmButton" prefHeight="33.0" prefWidth="123.0" text="CONFIRM" />
+      <Button fx:id="btnCloseAddOrEditMember" layoutX="300.0" layoutY="262.0" mnemonicParsing="false" onAction="#onClickCloseButton" prefHeight="33.0" prefWidth="94.0" text="CLOSE" />
+      <Label fx:id="lblInformationAddOrEditMember" layoutX="116.0" layoutY="207.0" prefHeight="50.0" prefWidth="368.0" textAlignment="CENTER" wrapText="true" />
+   </children>
+</AnchorPane>

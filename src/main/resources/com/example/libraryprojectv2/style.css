@@ -1,0 +1,63 @@
+.label{
+    -fx-font-weight: bold;
+}
+
+#btnLogin{
+    -fx-background-color: #17B2FF;
+    -fx-text-fill: #F1F1F1;
+}
+
+#lblFailedToLoginMessage{
+    -fx-text-fill: #FF0000;
+    -fx-font-weight: bold;
+}
+
+#lblLogin{
+    -fx-text-fill: #17B2FF;
+    -fx-font-weight: bold;
+}
+
+#lblUsernameInLogin{
+    -fx-font-weight: bold;
+}
+
+#lblPasswordInLogin{
+    -fx-font-weight: bold;
+}
+
+#mainAnchorPane{
+    -fx-background-color: rgba(234, 234, 234, 0.67);
+}
+
+#lblLibrarySystem{
+    -fx-text-fill: #17b2ff;
+}
+
+#lblItemsTitle, #lblMembersTitle, #lblWelcomeText, #lblAddOrEditMemberHeader, #lblAddItemHeader{
+    -fx-text-fill: #17b2ff;
+    -fx-font-size: 30px;
+}
+
+#btnLendItem, #btnEditItem, #btnEditMember{
+    -fx-background-color: #17b2ff;
+    -fx-text-fill: #000000;
+    -fx-pref-height: 32;
+    -fx-pref-width: 118;
+}
+#btnReceiveItem, #btnAddItem, #btnAddMember, #btnConfirmInAddItem, #btnConfirmAddOrEditMember{
+    -fx-background-color: #78ff4f;
+    -fx-text-fill: #000000;
+    -fx-pref-height: 32;
+    -fx-pref-width: 118;
+}
+#btnDeleteItem, #btnDeleteMember, #btnCloseInAddItem, #btnCloseAddOrEditMember{
+    -fx-background-color: #ff4646;
+    -fx-text-fill: #ffffff;
+    -fx-pref-height: 32;
+    -fx-pref-width: 118;
+}
+
+#btnFilter{
+    -fx-background-color: #003aab;
+    -fx-text-fill: #ffffff;
+}

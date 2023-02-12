@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label fx:id="lblLibrarySystem" layoutX="14.0" layoutY="10.0" prefHeight="38.0" prefWidth="263.0" text="LIBRARY SYSTEM">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Label>
+      <Label fx:id="lblInformation" layoutX="245.0" layoutY="10.0" prefHeight="38.0" prefWidth="374.0" text="Label" />
+        <TabPane layoutX="14.0" layoutY="53.0" prefHeight="375.0" prefWidth="605.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Lending/Receiving">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="337.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+                            <children>
+                                <Label fx:id="lblWelcomeText" layoutX="14.0" layoutY="8.0" prefHeight="42.0" prefWidth="416.0" text="Example text">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </Label>
+                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="267.0" layoutX="14.0" layoutY="57.0" stroke="WHITE" strokeType="INSIDE" width="276.0" />
+                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="267.0" layoutX="299.0" layoutY="57.0" stroke="WHITE" strokeType="INSIDE" width="287.0" />
+                                <Label fx:id="lblILendItemCode" layoutX="21.0" layoutY="66.0" text="Item Code:" />
+                                <Label fx:id="lblMemberIdLendItem" layoutX="21.0" layoutY="121.0" text="Member identifier:" />
+                                <TextField fx:id="txtItemCodeLendItem" layoutX="21.0" layoutY="90.0" prefHeight="25.0" prefWidth="251.0" promptText="Item Code" />
+                                <TextField fx:id="txtMemberIdLendItem" layoutX="21.0" layoutY="146.0" prefHeight="25.0" prefWidth="251.0" promptText="Member Identifier" />
+                                <Button fx:id="btnLendItem" layoutX="23.0" layoutY="185.0" mnemonicParsing="false" onAction="#onClickLendItemButton" prefHeight="25.0" prefWidth="128.0" text="Lend Item" />
+                                <Button fx:id="btnReceiveItem" layoutX="309.0" layoutY="126.0" mnemonicParsing="false" onAction="#onClickReceiveItemButton" prefHeight="25.0" prefWidth="128.0" text="Receive Item" />
+                                <Label fx:id="lblItemCodeReceiveItem" layoutX="309.0" layoutY="66.0" text="Item Code" />
+                                <TextField fx:id="txtItemCodeReceiveItem" layoutX="309.0" layoutY="90.0" prefHeight="25.0" prefWidth="251.0" promptText="Item Code" />
+                                <Label fx:id="lblLendItemInformation" layoutX="23.0" layoutY="224.0" prefHeight="38.0" prefWidth="249.0" />
+                                <Label fx:id="lblReceiveItemInformation" layoutX="309.0" layoutY="177.0" prefHeight="23.0" prefWidth="269.0" />
+                        <Label fx:id="lblReceivedDaysInformation" layoutX="309.0" layoutY="210.0" prefHeight="38.0" prefWidth="263.0" textFill="#9700ff">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Collection">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="342.0" prefWidth="597.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+                            <children>
+                                <Label fx:id="lblItemsTitle" layoutX="14.0" layoutY="6.0" prefHeight="47.0" prefWidth="131.0" text="Items">
+                                    <font>
+                                        <Font size="30.0" />
+                                    </font>
+                                </Label>
+                                <Button fx:id="btnAddItem" layoutX="14.0" layoutY="297.0" mnemonicParsing="false" onAction="#onClickAddItemButton" prefHeight="32.0" prefWidth="118.0" text="Add Item" />
+                                <Button fx:id="btnEditItem" layoutX="145.0" layoutY="297.0" mnemonicParsing="false" onAction="#onClickEditItemButton" prefHeight="32.0" prefWidth="118.0" text="Edit Item" />
+                                <Button fx:id="btnDeleteItem" layoutX="274.0" layoutY="297.0" mnemonicParsing="false" onAction="#onClickDeleteItemButton" prefHeight="32.0" prefWidth="118.0" text="Delete Item" />
+                                <TableView fx:id="tableViewItems" layoutX="14.0" layoutY="53.0" prefHeight="230.0" prefWidth="571.0">
+                                    <columns>
+                                        <TableColumn fx:id="colItemCode" prefWidth="76.0" text="Item Code" />
+                                        <TableColumn fx:id="colAvailable" prefWidth="82.0" text="Available" />
+                                        <TableColumn fx:id="colTitle" prefWidth="132.0" text="Title" />
+                                        <TableColumn fx:id="colAuthor" minWidth="0.0" prefWidth="151.0" text="Author" />
+                              <TableColumn fx:id="colLender" prefWidth="129.0" text="Lender" />
+                                    </columns>
+                                </TableView>
+                        <Button fx:id="btnFilter" layoutX="541.0" layoutY="17.0" mnemonicParsing="false" onAction="#onClickFilterButton" text="Filter" />
+                        <RadioButton fx:id="rbAllItems" layoutX="417.0" layoutY="9.0" mnemonicParsing="false" text="All Items" />
+                        <RadioButton fx:id="rbUnavailableItems" layoutX="417.0" layoutY="29.0" mnemonicParsing="false" text="Unavailable Items" />
+                        <TextField fx:id="txtSearchItem" layoutX="109.0" layoutY="19.0" prefHeight="25.0" prefWidth="242.0" promptText="Search Item" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Members">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="345.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+                            <children>
+                                <Label fx:id="lblMembersTitle" layoutX="14.0" layoutY="4.0" prefHeight="53.0" prefWidth="240.0" text="Members">
+                                    <font>
+                                        <Font size="30.0" />
+                                    </font>
+                                </Label>
+                                <TableView fx:id="tableViewMembers" layoutX="14.0" layoutY="57.0" prefHeight="222.0" prefWidth="572.0">
+                                    <columns>
+                                        <TableColumn fx:id="colMemberId" prefWidth="75.0" text="ID" />
+                                        <TableColumn fx:id="colFirstName" prefWidth="192.0" text="First Name" />
+                                        <TableColumn fx:id="colLastName" prefWidth="181.0" text="Last Name" />
+                                        <TableColumn fx:id="colBirthDate" prefWidth="123.0" text="Birth Date" />
+                                    </columns>
+                                </TableView>
+                                <Button fx:id="btnAddMember" layoutX="14.0" layoutY="292.0" mnemonicParsing="false" onAction="#onClickAddMemberButton" prefHeight="38.0" prefWidth="115.0" text="Add Member" />
+                                <Button fx:id="btnEditMember" layoutX="147.0" layoutY="292.0" mnemonicParsing="false" onAction="#onClickEditMemberButton" prefHeight="38.0" prefWidth="115.0" text="Edit Member" />
+                                <Button fx:id="btnDeleteMember" layoutX="280.0" layoutY="292.0" mnemonicParsing="false" onAction="#onClickDeleteMemberButton" prefHeight="38.0" prefWidth="115.0" text="Delete Member" />
+                        <TextField fx:id="txtSearchMember" layoutX="170.0" layoutY="20.0" prefHeight="25.0" prefWidth="250.0" promptText="Search Member" />
+                            </children></AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>
