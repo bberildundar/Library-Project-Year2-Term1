@@ -3,11 +3,7 @@
 
 This application is designed to manage a library's collection of items and members. Users of the application will be able to lend and receive items, as well as manage the collection and members.
 
-## Purpose
-The purpose of this project was to practice and reinforce the knowledge of Java fundamentals learned in the course.
-
 ## Features
-The Library Management System includes the features to:
 
 - Lend and receive items
 - Manage the collection of items
